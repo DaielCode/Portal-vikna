@@ -10,15 +10,19 @@
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },
+  "homepage": "https://daielcode.github.io/Portal-vikna",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^5.1.1",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.9.3",
     "vite": "^7.2.4"
   }
